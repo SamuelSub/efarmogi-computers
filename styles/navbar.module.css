@@ -2,19 +2,20 @@
 
 .logo {
   font-family: 'Arvo', serif;
+  color: white;
 }
 
 .navbar {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1em 10em;
+  text-align: center;
+  margin: 1em 10%;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
+  color: white;
 }
 
 .navbar ul li {

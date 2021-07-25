@@ -1,21 +1,17 @@
-import React from 'react'
+import React from 'react';
 import navStyles from '../styles/navbar.module.css';
+import Link from 'next/link';
 
 const Nav = () => {
   return (
     <nav className={navStyles.navbar}>
       <h1 className={navStyles.logo}>Efarmogi Copmuters</h1>
       <ul>
-        <li>Αρχική</li>
-        <li>Η Εταιρία</li>
-        <li>Υπηρεσίες</li>
-        <li>Επικοινωνία</li>
+        <li><Link href="/">Αρχική</Link></li>
+        <li><Link href="/company">Η Εταιρία</Link></li>
+        <li><Link href="/services">Υπηρεσίες</Link></li>
+        <li><Link href="/contact">Επικοινωνία</Link></li>
       </ul>
-      <div className={navStyles.hamburger}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
     </nav>
   )
 }
