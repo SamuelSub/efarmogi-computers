@@ -16,7 +16,10 @@ export default function Home() {
      
         <div className={styles.background}>
           <Image src={background} alt="background image" layout="fill" objectFit="cover" />
-          <div className={styles.heroText}><h1 className={styles.mainHeading}>Δειτε Τις Υπηρεσιες Μας!</h1></div>
+          <div className={styles.heroText}>
+            <h1 className={styles.mainHeading}>Δειτε Τις Υπηρεσιες Μας!</h1>
+            <h2 className={styles.heroDesc}>Έχει πρόβλημα το κινητό, ο υπολογιστής, το Laptop,το Tablet ή οποιαδήποτε άλλη συσκευή; Μπορούμε να την επισκευάσουμε με πρωταρχικό μας κριτήριο την ποιότητα.</h2>
+          </div>
         </div>
         
       </main>

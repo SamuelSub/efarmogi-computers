@@ -2,7 +2,9 @@
 
 .logo {
   font-family: 'Arvo', serif;
-  color: white;
+  color: #f1faee;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.8em;
 }
 
 .navbar {
@@ -15,7 +17,8 @@
 .navbar ul {
   display: flex;
   list-style: none;
-  color: white;
+  color: #f1faee;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .navbar ul li {
