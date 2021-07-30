@@ -11,7 +11,10 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 1em 10%;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  padding: 1em 3em;
 }
 
 .navbar ul {

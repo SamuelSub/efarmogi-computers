@@ -22,24 +22,22 @@
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .mainHeading {
-  color: #a8dadc;
-  /* display: flex; */
-  /* width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center; */
-  margin: 0 10%;
-  font-size: 4.5em;
+  color: white;
   font-family: 'Roboto', 'sans-serif';
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  padding-left: 1em;
+  padding-top: 3em;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .heroDesc {
   color: white;
   font-size: 1.2em;
   text-align: center;
-  width: 50em;
+  padding: 1em 2em;
 }
