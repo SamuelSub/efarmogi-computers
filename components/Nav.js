@@ -5,20 +5,25 @@ import { motion } from 'framer-motion';
 
 const Nav = () => {
 
-  const [isOpen, setIsOpen] = useState('false');
+  const [isShowing, setIsShowing] = useState(false);
 
   const iconVariants = {
-    opened: {
-      
+    hideMenu: {
+      backgroundColor: 'white'
     },
-    closed: {
-      
+    showMenu: {
+      backgroundColor: 'white',
+      position: 'absolute',
+      width: '100%',
+      right: 0,
+      top: 0,
+      height: '100%'
     }
   }
 
   return (
     <nav className={navStyles.navbar} >
-      <h1 className={navStyles.logo}>Efarmogi Computers</h1>
+      <motion.h1 className={navStyles.logo}>Efarmogi Computers</motion.h1>
       <ul>
         <li><Link href="/">Αρχική</Link></li>
         <li><Link href="/company">Η Εταιρία</Link></li>
@@ -26,7 +31,18 @@ const Nav = () => {
         <li><Link href="/contact">Επικοινωνία</Link></li>
       </ul>
       <div className={navStyles.burgerContainer}>
-        <motion.div initial={false} variants={iconVariants} animate={isOpen ? 'opened' : 'closed'} onClick={() => setIsOpen(state => !state)} className={navStyles.burgerIcon} ></motion.div>
+        <motion.div className={navStyles.burgerIcon}
+          variants={iconVariants}
+          initial="hideMenu"
+          animate={isShowing ? 'showMenu' : 'hideMenu'}
+          onClick={() => {
+            if(isShowing) {
+              setIsShowing(false)
+            } else {
+              setIsShowing(true)
+            }
+          }}
+        ></motion.div>
       </div>
     </nav>
   )
