@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.div1,
+.div2,
+.div3 {
+  margin: 1px;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
