@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.servicesWrapper {
+  width: 80%;
+  margin: 4em auto;
+  font-family: 'Vollkorn', serif;
+}
+
+.mainHeading {
+  margin-top: 2em;
+}

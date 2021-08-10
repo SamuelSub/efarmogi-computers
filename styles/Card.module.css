@@ -1,0 +1,17 @@
+.card {
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(187, 187, 187, 0.233);
+  border-radius: 5px;
+  width: 80%;
+  margin: 2em auto;
+  padding: 2em 0em;
+}
+
+.cardHeading {
+  font-size: 1.2rem;
+  padding: 1em 2em;
+}
+
+.cardParagraph {
+  padding: 1em 2em;
+}
