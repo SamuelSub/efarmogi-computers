@@ -19,3 +19,12 @@
   padding: 1em 2em;
   color: rgb(75, 75, 75);
 }
+
+@media screen and (min-width: 960px) {
+  .cardWrapper {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    gap: 3em;
+  }
+}

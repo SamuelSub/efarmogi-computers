@@ -7,7 +7,7 @@ import products from '../public/products.png'
 
 export const Card = () => {
   return (
-    <div>
+    <div className={styles.cardWrapper}>
       <div className={styles.card}>
         <h2 className={styles.cardHeading}>IT Support <Image src={itSupport} width={25} height={25}/></h2>
         <p className={styles.cardParagraph}>Υποστήριξη τεχνικων υπηρεσιων πληροφορικης στον χωρο εργασιας σας.</p>

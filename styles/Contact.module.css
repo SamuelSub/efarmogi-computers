@@ -1,0 +1,34 @@
+.contactWrapper {
+  width: 80vw;
+  margin: auto;
+  background-color: #048fcb;
+  color: white;
+  padding-bottom: 2em;
+}
+
+.mainHeading {
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.location {
+  margin: 2em 0em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.email {
+  margin: 2em 0em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.phone {
+  margin: 2em 0em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}

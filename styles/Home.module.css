@@ -40,3 +40,27 @@
   background-color: #048fcb;
   padding-bottom: 3em;
 }
+
+.contactWrapper {
+  background-color: #048fcb;
+}
+
+.cta:hover {
+  background-color: #048fcb;
+  color: white;
+  transition: 200ms ease-in-out;
+}
+
+@media screen and (min-width: 960px) {
+  .heroSection {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+  }
+  .mainHeading {
+    font-size: calc(1rem + 2.5vw);
+    width: 30vw;
+  }
+}

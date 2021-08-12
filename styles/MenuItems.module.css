@@ -1,0 +1,21 @@
+@media screen and (min-width: 760px) {
+  .itemsWrapper ul {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  /* .itemsWrapper ul li:active {
+    color: #048fcb;
+  } */
+
+  .itemsWrapper ul li {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .itemsWrapper {
+    display: none;
+  }
+}

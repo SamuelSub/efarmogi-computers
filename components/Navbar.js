@@ -9,6 +9,7 @@ export const Navbar = () => {
     <nav className={styles.nav}>
       <Logo />
       <MenuToggle />
+      <MenuItems />
     </nav>
   )
 }

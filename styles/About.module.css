@@ -1,0 +1,13 @@
+.aboutWrapper {
+  width: 80vw;
+  margin: auto;
+}
+
+.mainHeading {
+  margin-top: 3em;
+}
+
+.mainParagraph {
+  margin: 3em auto;
+  padding-bottom: 2em;
+}

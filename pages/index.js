@@ -22,12 +22,17 @@ export default function Home() {
         <div className={styles.heroSection}>
 
           
+          <div className={styles.img}>
+            <Image src={heroImage} alt="main image" />
+          </div>
 
-          <Image src={heroImage} alt="main image" className={styles.img} />
+          <div className={styles.ctaWrapper}>
+            <h1 className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</h1>
 
-          <h1 className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</h1>
+            <a href="#" className={styles.cta}>Καλέστε Μας!</a>
+          </div>
 
-          <a href="#" className={styles.cta}>Καλέστε Μας!</a>
+       
           
         </div>
         
@@ -36,7 +41,10 @@ export default function Home() {
           <Card />
         </div>
         <About />
-        <Contact />
+        <div className={styles.contactWrapper}>
+          <Contact />
+        </div>
+        
 
       </body>
     </div>
