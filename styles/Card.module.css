@@ -1,17 +1,21 @@
 .card {
   background-color: white;
-  box-shadow: 1px 1px 10px rgba(187, 187, 187, 0.233);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   width: 80%;
   margin: 2em auto;
-  padding: 2em 0em;
+  padding: 3em 1em;
 }
 
 .cardHeading {
+  display: flex;
+  align-items: center;
+  gap: 1em;
   font-size: 1.2rem;
-  padding: 1em 2em;
+  padding: 1em 2rem;
 }
 
 .cardParagraph {
   padding: 1em 2em;
+  color: rgb(75, 75, 75);
 }

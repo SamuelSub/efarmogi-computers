@@ -5,6 +5,8 @@ import Services from './services';
 import heroImage from '../public/people.jpg'
 import Image from 'next/image'
 import Card from '../components/Card'
+import Contact from './contact';
+import About from './about';
 
 export default function Home() {
   return (
@@ -28,10 +30,13 @@ export default function Home() {
           <a href="#" className={styles.cta}>Καλέστε Μας!</a>
           
         </div>
-        <Services />
-        <Card />
-        <Card />
-        <Card />
+        
+        <div className={styles.servicesWrapper}>
+          <Services />
+          <Card />
+        </div>
+        <About />
+        <Contact />
 
       </body>
     </div>
