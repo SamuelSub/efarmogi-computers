@@ -8,7 +8,7 @@ import phone from '../public/phone.svg'
 export const contact = () => {
   return (
     <div className={styles.contactWrapper}>
-      <h2 className={styles.mainHeading}>Επικοινωνία</h2>
+      <h2 className={styles.mainHeading} id="contact">Επικοινωνία</h2>
       <h3 className={styles.location}><Image src={location} width={25} height={25}/> Τοποθεσία</h3>
       <p>Πλατεία Κωνσταντινουπόλεως 6 & Μάνου Κατράκη 1, 81101 Μυτιλήνη</p>
       <h3 className={styles.email}><Image src={email} width={25} height={25}/> E-mail</h3>

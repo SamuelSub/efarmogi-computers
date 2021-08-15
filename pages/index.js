@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Card from '../components/Card'
 import Contact from './contact';
 import About from './about';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           <div className={styles.ctaWrapper}>
             <h1 className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</h1>
 
-            <a href="#" className={styles.cta}>Καλέστε Μας!</a>
+            <Link href="/#contact"><a className={styles.cta}>Καλέστε Μας!</a></Link>
           </div>
 
        

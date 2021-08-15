@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .aboutWrapper {
   width: 80vw;
   margin: auto;
+  font-family: 'Vollkorn', serif;
+  padding: 4em 0em;
 }
 
 .mainHeading {
   margin-top: 3em;
+  font-size: calc(1rem + 1.5vw);
 }
 
 .mainParagraph {
