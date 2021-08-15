@@ -51,6 +51,27 @@
   transition: 200ms ease-in-out;
 }
 
+/* Test for nav styling */
+
+.nav {
+  width: 80vw;
+  padding: 1em 0em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 760px) {
+  .nav {
+    width: 80vw;
+    margin: auto;
+    padding: 1em 0em;
+  }
+}
+
+/* end for test nav styling */
+
 @media screen and (min-width: 960px) {
   .heroSection {
     display: flex;

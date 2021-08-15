@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import MenuToggle from './MenuToggle'
 import MenuItems from './MenuItems'
-import styles from '../styles/NavBar.module.css'
+import styles from '../styles/Home.module.css'
 
 export const Navbar = () => {
   return (
