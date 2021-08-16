@@ -24,7 +24,7 @@ export default function Home() {
 
           
           <div className={styles.img}>
-            <Image src={heroImage} alt="main image" priority={true} />
+            <Image src={heroImage} alt="main image" priority={true} quality={30}/>
           </div>
 
           <div className={styles.ctaWrapper}>
