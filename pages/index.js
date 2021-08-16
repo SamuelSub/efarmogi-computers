@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Services from './services';
-import heroImage from '../public/rsz_people.jpg'
+import heroImage from '../public/people.jpg'
 import Image from 'next/image'
 import Card from '../components/Card'
 import Contact from './contact';
