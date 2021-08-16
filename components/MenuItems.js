@@ -7,7 +7,7 @@ const MenuItems = () => {
   return (
     <div className={styles.itemsWrapper}>
       <ul>
-        <li><Link href="#"><a>Αρχική</a></Link></li>
+        <li><Link href="/"><a>Αρχική</a></Link></li>
         <li><Link href="/#services"><a>Υπηρεσίες</a></Link></li>
         <li><Link href="/#about"><a>Η Εταιρία</a></Link></li>
         <li><Link href="/#contact"><a>Επικοινωνία</a></Link></li>

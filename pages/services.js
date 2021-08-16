@@ -1,6 +1,4 @@
-import React from 'react'
 import styles from '../styles/Services.module.css'
-import Card from '../components/Card'
 
 export const Services = () => {
   return (
