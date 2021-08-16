@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Services from './services';
-import heroImage from '../public/people.jpg'
+import heroImage from '../public/rsz_people.jpg'
 import Image from 'next/image'
 import Card from '../components/Card'
 import Contact from './contact';
@@ -24,7 +24,7 @@ export default function Home() {
 
           
           <div className={styles.img}>
-            <Image src={heroImage} alt="main image" priority={true} quality={30}/>
+            <Image src={heroImage} alt="main image" quality={30}/>
           </div>
 
           <div className={styles.ctaWrapper}>
