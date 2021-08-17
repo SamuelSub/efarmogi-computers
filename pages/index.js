@@ -8,8 +8,57 @@ import Card from '../components/Card'
 import Contact from './contact';
 import About from './about';
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { useState } from 'react';
 
 export default function Home() {
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  // Variants for the main heading
+
+  const mainHeadingVariants = {
+    visible: {
+      ease: 'easeInOut',
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.5
+      }
+    },
+    hidden: {
+      y: 30,
+      opacity: 0
+    }
+  }
+
+  // Variants for the main image
+
+  const backImageVariants = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.2,
+        duration: 0.5
+      }
+    },
+    hidden: {
+      opacity: 0,
+      y: -20
+    }
+  }
+
+  const ctaVariants = {
+    clicked: {
+      scale: 2
+    },
+    notClicked: {
+      opacity: 1
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,14 +72,14 @@ export default function Home() {
         <div className={styles.heroSection}>
 
           
-          <div className={styles.img}>
+          <motion.div variants={backImageVariants} initial="hidden" animate="visible" className={styles.img}>
             <Image src={heroImage} alt="main image" quality={30}/>
-          </div>
+          </motion.div>
 
           <div className={styles.ctaWrapper}>
-            <h1 className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</h1>
+            <motion.h1 initial="hidden" animate="visible" variants={mainHeadingVariants} className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</motion.h1>
 
-            <Link href="/#contact"><a className={styles.cta}>Καλέστε Μας!</a></Link>
+            <Link href="/#contact"><motion.a className={styles.cta}>Καλέστε Μας!</motion.a></Link>
           </div>
 
        
