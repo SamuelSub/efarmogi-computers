@@ -9,6 +9,7 @@
 
 .mainHeading {
   font-size: calc(1rem + 4.5vw);
+  font-weight: 900;
   margin: 1em auto;
   text-shadow: 2px 2px 5px rgba(180, 180, 180, 0.3);
   margin-top: 2em;
