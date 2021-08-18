@@ -52,7 +52,7 @@ export default function Home() {
 
   const ctaVariants = {
     clicked: {
-      scale: 2
+      
     },
     notClicked: {
       opacity: 1
