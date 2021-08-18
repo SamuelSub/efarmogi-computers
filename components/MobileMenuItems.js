@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from '../styles/MenuItems.module.css'
 import Link from 'next/link'
+import styles from '../styles/MobileMenuItems.module.css'
 
-const MenuItems = () => {
+const MobileMenuItems = () => {
   return (
     <div className={styles.itemsWrapper}>
-      <ul>
+      <ul className={styles.list}>
         <li><Link href="/"><a>Αρχική</a></Link></li>
         <li><Link href="/#services"><a>Υπηρεσίες</a></Link></li>
         <li><Link href="/#about"><a>Η Εταιρία</a></Link></li>
@@ -15,4 +15,4 @@ const MenuItems = () => {
   )
 }
 
-export default MenuItems
+export default MobileMenuItems

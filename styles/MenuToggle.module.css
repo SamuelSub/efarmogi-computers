@@ -6,10 +6,23 @@
 .div1,
 .div2,
 .div3 {
+  position: relative;
+  z-index: 100;
   margin: 1px;
   width: 25px;
   height: 3px;
   background-color: black;
+}
+
+.backDiv {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
 }
 
 @media screen and (min-width: 760px) {

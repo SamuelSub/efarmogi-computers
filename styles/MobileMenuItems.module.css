@@ -1,0 +1,16 @@
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 2.7rem;
+  color: #048fcb;
+}
+
+.list li {
+  margin-bottom: 1em;
+}
