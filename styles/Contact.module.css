@@ -33,3 +33,7 @@
   align-items: center;
   gap: 1em;
 }
+
+.map {
+  width: 80vw;
+}
