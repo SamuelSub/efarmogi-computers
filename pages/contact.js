@@ -11,7 +11,7 @@ export const contact = () => {
       <h2 className={styles.mainHeading} id="contact">Επικοινωνία</h2>
       <h3 className={styles.location}><Image src={location} alt="location" width={25} height={25}/> Τοποθεσία</h3>
       <p>Πλατεία Κωνσταντινουπόλεως 6 & Μάνου Κατράκη 1, 81101 Μυτιλήνη</p>
-      <iframe style={{
+      <iframe title="map" style={{
         width: '80vw',
         height: '60vh'
       }}
