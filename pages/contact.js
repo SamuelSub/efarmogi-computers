@@ -3,6 +3,7 @@ import Image from 'next/image'
 import location from '../public/location.svg'
 import email from '../public/email.svg'
 import phone from '../public/phone.svg'
+import ContactForm from '../components/contactForm'
 
 export const contact = () => {
   return (
@@ -18,7 +19,8 @@ export const contact = () => {
         src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
       </iframe>
       <h3 className={styles.email}><Image src={email} alt="email contact" width={25} height={25}/> E-mail</h3>
-      <p>efarmogi.taxidis@gmail.com</p>
+      <ContactForm />
+      {/* <p>efarmogi.taxidis@gmail.com</p> */}
       <h3 className={styles.phone}><Image src={phone} alt="phone contact" width={25} height={25}/> Τηλέφωνο Επικοινωνίας</h3>
       <p>698 092 6921</p>
       <p>22510 42350</p>
