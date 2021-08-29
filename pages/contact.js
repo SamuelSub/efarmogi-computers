@@ -3,33 +3,23 @@ import Image from 'next/image'
 import location from '../public/location.svg'
 import email from '../public/email.svg'
 import phone from '../public/phone.svg'
-import { useEffect, useState } from 'react'
 // import ContactForm from '../components/contactForm'
 
-const Contact = () => {
-
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  },[]);
+const contact = () => {
 
   return (
     <div className={styles.contactWrapper}>
       <h2 className={styles.mainHeading} id="contact">Επικοινωνία</h2>
       <h3 className={styles.location}><Image src={location} alt="location" width={25} height={25}/> Τοποθεσία</h3>
       <p>Πλατεία Κωνσταντινουπόλεως 6 & Μάνου Κατράκη 1, 81101 Μυτιλήνη</p>
-      {isLoaded && (
-        <iframe title="map" style={{
-          width: '80vw',
-          height: '60vh'
-        }}
-          frameBorder="0"
-          loading="lazy"
-          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
-        </iframe>
-      )}
-      
+      <iframe title="map" style={{
+        width: '80vw',
+        height: '60vh'
+      }}
+        frameBorder="0"
+        loading="lazy"
+        src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
+      </iframe>
       <h3 className={styles.email}><Image src={email} alt="email contact" width={25} height={25}/> E-mail</h3>
       {/* <ContactForm /> */}
       {/* <p>efarmogi.taxidis@gmail.com</p> */}
@@ -41,4 +31,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default contact
