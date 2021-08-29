@@ -6,6 +6,14 @@ import phone from '../public/phone.svg'
 // import ContactForm from '../components/contactForm'
 
 export const contact = () => {
+
+  async function getStaticProps(context) {
+    
+    return {
+      props: data
+    }
+  }
+
   return (
     <div className={styles.contactWrapper}>
       <h2 className={styles.mainHeading} id="contact">Επικοινωνία</h2>
@@ -16,6 +24,7 @@ export const contact = () => {
         height: '60vh'
       }}
         frameBorder="0"
+        loading="lazy"
         src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
       </iframe>
       <h3 className={styles.email}><Image src={email} alt="email contact" width={25} height={25}/> E-mail</h3>
