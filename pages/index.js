@@ -79,7 +79,7 @@ export default function Home() {
           <div className={styles.ctaWrapper}>
             <motion.h1 initial="hidden" animate="visible" variants={mainHeadingVariants} className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</motion.h1>
 
-            <Link href="/#contact"><motion.a variants={ctaVariants} initial="notClicked" animate={isClicked ? 'clicked' : 'notClicked'} onClick={() => {
+            <Link href="/#contact" passHref><motion.a variants={ctaVariants} initial="notClicked" animate={isClicked ? 'clicked' : 'notClicked'} onClick={() => {
               if(!isClicked) {
                 setIsClicked(true)
               } else {
@@ -101,7 +101,7 @@ export default function Home() {
           <Contact />
         </div>
         
-
+      
       </body>
     </div>
   )
