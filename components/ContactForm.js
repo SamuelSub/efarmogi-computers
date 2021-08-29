@@ -26,9 +26,7 @@ const ContactForm = () => {
       },
       body: JSON.stringify(data)
     }).then((res) => {
-      console.log('Response Received')
       if(res.status === 200) {
-        console.log('Response succeeded!');
         setName('');
         setEmail('');
         setPhone('');
