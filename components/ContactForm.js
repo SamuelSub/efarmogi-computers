@@ -9,8 +9,7 @@ const ContactForm = () => {
   const [subject, setSubject] = useState();
   const [text, setText] = useState();
 
-  const submitContactForm = (event) => {
-    event.preventDefault();
+  const submitContactForm = () => {
     let data = {
       name,
       email,
