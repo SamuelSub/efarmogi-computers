@@ -5,7 +5,7 @@ export default class Map extends Component {
   componentDidMount() {
     setTimeout(() => {
       document.querySelector('iframe').style.display = 'block';
-    }, 1000);
+    }, 2000);
   }
 
   render() {
