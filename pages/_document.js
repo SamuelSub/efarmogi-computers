@@ -14,14 +14,14 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <style global jsx>{`
+        {/* <style global jsx>{`
           body {
             font-family: 'Roboto', serif;
           }
           .logo {
             font-family: 'Nunito', 'sans-serif';
           }
-        `}</style>
+        `}</style> */}
       </Html>
     )
   }
