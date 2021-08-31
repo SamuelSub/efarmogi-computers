@@ -37,3 +37,8 @@
 .map {
   width: 80vw;
 }
+
+.contactWrapper iframe {
+  width: 80vw;
+  height: 60vh;
+}
