@@ -3,6 +3,7 @@ import Image from 'next/image'
 import location from '../public/location.svg'
 import email from '../public/email.svg'
 import phone from '../public/phone.svg'
+import Map from '../components/Map'
 // import ContactForm from '../components/contactForm'
 
 const contact = () => {
@@ -12,11 +13,7 @@ const contact = () => {
       <h2 className={styles.mainHeading} id="contact">Επικοινωνία</h2>
       <h3 className={styles.location}><Image src={location} alt="location" width={25} height={25}/> Τοποθεσία</h3>
       <p>Πλατεία Κωνσταντινουπόλεως 6 & Μάνου Κατράκη 1, 81101 Μυτιλήνη</p>
-      {/* <iframe title="map"
-        frameBorder="0"
-        loading="lazy"
-        src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
-      </iframe> */}
+      <Map />
       <h3 className={styles.email}><Image src={email} alt="email contact" width={25} height={25}/> E-mail</h3>
       {/* <ContactForm /> */}
       {/* <p>efarmogi.taxidis@gmail.com</p> */}
