@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
+import Script from 'next/script'
+import React, {Component} from 'react'
 
 export default class Map extends Component {
 
-  componentDidMount() {
-    setTimeout(() => {
-      document.querySelector('iframe').style.display = 'block';
-    }, 2000);
-  }
-
   render() {
+
+    const url = <Script src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}/>
+
     return (
-      <iframe style={{display: 'none'}} title="map"
+      <iframe title="map"
         frameBorder="0"
         loading="lazy"
-        src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
+        src={url.props.src}allowFullScreen>
       </iframe> 
     )
   }
