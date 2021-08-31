@@ -3,9 +3,7 @@ import React, { Component } from 'react'
 export default class Map extends Component {
 
   componentDidMount() {
-    setTimeout(() => {
-      document.querySelector('iframe').style.display = 'block';
-    }, 1000);
+    document.querySelector('iframe').style.display = 'block';
   }
 
   render() {
