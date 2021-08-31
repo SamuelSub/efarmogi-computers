@@ -52,7 +52,7 @@ export default function Home() {
 
   const ctaVariants = {
     clicked: {
-      
+      opacity: 1
     },
     notClicked: {
       opacity: 1
@@ -62,7 +62,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Efarmogi Copmuters</title>
+        <title>Efarmogi Computers</title>
         <meta charSet="UTF-8"></meta>
       </Head> 
       <section> {/* Change this to body tag before commit */}
