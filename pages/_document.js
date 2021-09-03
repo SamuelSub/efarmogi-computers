@@ -5,8 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang="el-gr">
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet" />
           <meta charSet="utf-8"/>
           <meta name="description" content="Website for it support in lesvos mytilene"/>
         </Head>
@@ -14,14 +12,14 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        {/* <style global jsx>{`
+        <style global jsx>{`
           body {
-            font-family: 'Roboto', serif;
+            font-family: 'Arial';
           }
-          .logo {
-            font-family: 'Nunito', 'sans-serif';
-          }
-        `}</style> */}
+          // .logo {
+          //   font-family: 'Nunito', 'sans-serif';
+          // }
+        `}</style>
       </Html>
     )
   }
