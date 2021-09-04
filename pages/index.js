@@ -5,11 +5,14 @@ import Services from './services';
 import heroImage from '../public/people.jpg'
 import Image from 'next/image'
 import Card from '../components/Card'
-import Contact from './contact';
+// import Contact from './contact';
 import About from './about';
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useState } from 'react';
+import dynamic from 'next/dynamic'
+
+const Contact = dynamic(() => import('./contact'));
 
 export default function Home() {
 
