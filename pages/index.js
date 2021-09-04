@@ -67,10 +67,7 @@ export default function Home() {
       </Head> 
       <section> {/* Change this to body tag before commit */}
         <Navbar />
-
         <div className={styles.heroSection}>
-
-          
           <motion.div variants={backImageVariants} initial="hidden" animate="visible" className={styles.img}>
             <Image src={heroImage} alt="main image" quality={30}/>
           </motion.div>
@@ -80,9 +77,6 @@ export default function Home() {
 
             <Link href="/#contact" passHref><motion.a variants={ctaVariants} initial="notClicked" animate={isClicked ? 'clicked' : 'notClicked'} onClick={() => isClicked ? setIsClicked(false) : setIsClicked(true)} className={styles.cta}>Καλέστε Μας!</motion.a></Link>
           </div>
-
-       
-          
         </div>
         
         <div className={styles.servicesWrapper}>
@@ -93,8 +87,6 @@ export default function Home() {
         <div className={styles.contactWrapper}>
           <Contact />
         </div>
-        
-      
       </section>
     </div>
   )
