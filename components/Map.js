@@ -1,24 +1,32 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 const Map = () => {
 
-  let [isLoaded, setIsLoaded] = useState(false)
+  // let [isLoaded, setIsLoaded] = useState(false)
+
+  const createMap = () => {
+    let fr = document.createElement('iframe');
+    fr.src = `https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`;
+    fr.title = 'map';
+    fr.loading = 'lazy';
+    fr.allowFullscreen = true;
+    fr.frameBorder = 'none'
+    const mapContainer = document.querySelector('.map-container');
+    mapContainer.append(fr);
+  }
 
   useEffect(() => {
-    setIsLoaded(true)
+    // setIsLoaded(true)
+    const map = document.querySelector('.map-container');
+    if(map.innerHTML == '') {
+      createMap();
+    } else {
+      return
+    }
   }, [])
 
   return (
-    <div>
-      {isLoaded && (
-        <iframe title="map"
-          frameBorder="0"
-          loading="lazy"
-          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Efarm0g1+Computers`}allowFullScreen>
-        </iframe>
-      )}
-    </div>
-     
+    <div className="map-container"></div>
   )
 }
 
