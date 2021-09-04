@@ -69,7 +69,7 @@ export default function Home() {
         <Navbar />
         <div className={styles.heroSection}>
           <motion.div variants={backImageVariants} initial="hidden" animate="visible" className={styles.img}>
-            <Image src={heroImage} alt="main image" width={100} height={100} quality={30} priority/>
+            <Image src={heroImage} alt="main image" quality={30} priority/>
           </motion.div>
 
           <div className={styles.ctaWrapper}>
