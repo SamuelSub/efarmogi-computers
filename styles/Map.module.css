@@ -1,4 +1,4 @@
-.mapImg img {
-  width: 100vw;
-  cursor: pointer;
+.frameWrapper iframe {
+  width: 100%;
+  border: none;
 }
