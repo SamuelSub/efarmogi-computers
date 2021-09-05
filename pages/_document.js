@@ -16,9 +16,6 @@ class MyDocument extends Document {
           body {
             font-family: 'Arial';
           }
-          // .logo {
-          //   font-family: 'Nunito', 'sans-serif';
-          // }
         `}</style>
       </Html>
     )
