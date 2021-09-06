@@ -1,5 +1,6 @@
 import styles from '../styles/ContactForm.module.css'
-import emailjs from 'emailjs-com'
+import dynamic from 'next/dynamic'
+const emailjs = dynamic(() => import('emailjs-com'))
 
 const ContactForm = () => {
 
