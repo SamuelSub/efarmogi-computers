@@ -1,57 +1,35 @@
-// import { useState } from 'react';
-// import styles from '../styles/ContactForm.module.css'
+import styles from '../styles/ContactForm.module.css'
+import emailjs from 'emailjs-com'
 
-// const ContactForm = () => {
+const ContactForm = () => {
 
-//   const [name, setName] = useState();
-//   const [email, setEmail] = useState();
-//   const [phone, setPhone] = useState();
-//   const [subject, setSubject] = useState();
-//   const [text, setText] = useState();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset()  
+  }
 
-//   const submitContactForm = () => {
-//     let data = {
-//       name,
-//       email,
-//       phone,
-//       subject,
-//       text
-//     }
-
-//     fetch('/api/contact', {
-//       method: 'POST',
-//       headers: {
-//         'Accept': 'application/json, text/plain, */*',
-//         'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify(data)
-//     }).then((res) => {
-//       if(res.status === 200) {
-//         setName('');
-//         setEmail('');
-//         setPhone('');
-//         setSubject('');
-//         setText('');
-//       }
-//     })
-//   }
-
-//   return (
-//     <form className={styles.contactForm} onSubmit={submitContactForm}>
+  return (
+    <form className={styles.contactForm} onSubmit={sendEmail}>
       
-//       <input type="text" name="name" id="name" placeholder="Όνομα" onChange={(e) => setName(e.target.value)}/>
+      <input type="text" name="name" id="name" placeholder="Όνομα" />
 
-//       <input type="text" name="email"  id="email" placeholder="Διεύθυνση email" onChange={(e) => setEmail(e.target.value)}/>
+      <input type="text" name="email"  id="email" placeholder="Διεύθυνση email" />
 
-//       <input type="text" name="phone" id="phone" placeholder="Τηλέφωνο" onChange={(e) => setPhone(e.target.value)}/>
+      <input type="text" name="phone" id="phone" placeholder="Τηλέφωνο" />
 
-//       <input type="text" name="subject"  id="subject" placeholder="Θέμα" onChange={(e) => setSubject(e.target.value)}/>
+      <input type="text" name="subject"  id="subject" placeholder="Θέμα"/>
 
-//       <textarea id="text" placeholder="Γράψτε το μύνημα σας εδω..." onChange={(e) => setText(e.target.value)}></textarea>
+      <textarea id="text" name="text" placeholder="Γράψτε το μύνημα σας εδω..."></textarea>
 
-//       <button type="submit">Send</button>
-//     </form>
-//   )
-// }
+      <button type="submit">Send</button>
+    </form>
+  )
+}
 
-// export default ContactForm
+export default ContactForm

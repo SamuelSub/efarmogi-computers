@@ -7,6 +7,10 @@
   .itemsWrapper ul li {
     margin-left: 1em;
   }
+  .itemsWrapper ul li a:hover {
+    color: #048fcb;
+    transition: 150ms ease-in-out;
+  }
 }
 
 @media screen and (max-width: 760px) {
