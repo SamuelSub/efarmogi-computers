@@ -48,6 +48,16 @@
   transition: 200ms ease-in-out;
 }
 
+.copyright {
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #048fcb;
+  color: white;
+  border-top: 1px solid white;
+  font-size: 0.7rem;
+}
+
 /* Test for nav styling */
 
 .nav {

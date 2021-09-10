@@ -20,15 +20,15 @@ export default function Home() {
   const mainHeadingVariants = {
     visible: {
       ease: 'easeInOut',
-      y: 0,
+      x: 0,
       opacity: 1,
       transition: {
         delay: 0.5,
-        duration: 0.5
+        duration: 1
       }
     },
     hidden: {
-      y: 30,
+      x: -30,
       opacity: 0
     }
   }
@@ -38,7 +38,7 @@ export default function Home() {
   const backImageVariants = {
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
       transition: {
         delay: 0.5,
         duration: 1
@@ -46,16 +46,23 @@ export default function Home() {
     },
     hidden: {
       opacity: 0,
-      y: -20
+      x: 20
     }
   }
 
   const ctaVariants = {
-    clicked: {
-      opacity: 1
+    visible: {
+      ease: 'easeInOut',
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        duration: 1
+      }
     },
-    notClicked: {
-      opacity: 1
+    hidden: {
+      x: -30,
+      opacity: 0
     }
   }
 
@@ -69,13 +76,13 @@ export default function Home() {
         <Navbar />
         <div className={styles.heroSection}>
           <motion.div variants={backImageVariants} initial="hidden" animate="visible" className={styles.img}>
-            <Image src={heroImage} alt="main image" quality={30} priority/>
+            <Image src={heroImage} alt="main image" quality={100} priority/>
           </motion.div>
 
           <div className={styles.ctaWrapper}>
             <motion.h1 initial="hidden" animate="visible" variants={mainHeadingVariants} className={styles.mainHeading}>Χρειάζεσαι Άμεσα Τεχνική Υποστήριξη Για Την Επιχείρηση Σου;</motion.h1>
 
-            <Link href="/#contact" passHref><motion.a variants={ctaVariants} initial="notClicked" animate={isClicked ? 'clicked' : 'notClicked'} onClick={() => isClicked ? setIsClicked(false) : setIsClicked(true)} className={styles.cta}>Καλέστε Μας!</motion.a></Link>
+            <Link href="/#contact" passHref><motion.a variants={ctaVariants} initial="hidden" animate='visible' onClick={() => isClicked ? setIsClicked(false) : setIsClicked(true)} className={styles.cta}>Καλέστε Μας!</motion.a></Link>
           </div>
         </div>
         
@@ -88,6 +95,9 @@ export default function Home() {
           <Contact />
         </div>
       </section>
+      <footer className={styles.copyright}>
+        Copyright &copy; Efarmogi Computers. All rights Reserved
+      </footer>
     </div>
   )
 }

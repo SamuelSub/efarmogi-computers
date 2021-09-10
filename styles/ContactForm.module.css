@@ -18,3 +18,14 @@
   border: none;
   border-radius: 3px;
 }
+
+.contactForm button {
+  padding: 1em 2em;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 1rem;
+  color: #048fcb;
+  font-weight: bold;
+  font-size: 0.8rem;
+}

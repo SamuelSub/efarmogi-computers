@@ -27,7 +27,7 @@ const ContactForm = () => {
 
       <textarea id="text" name="text" placeholder="Γράψτε το μύνημα σας εδω..."></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">Αποστολή</button>
     </form>
   )
 }
